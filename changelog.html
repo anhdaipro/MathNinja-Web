@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Ninja - Update v1.0.5 Release Notes</title>
+    <meta name="description"
+        content="Discover the latest updates, Calculus Arena balancing, 120 FPS Skia engine optimizations, and bug fixes in Math Ninja v1.0.5.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/changelog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="changelog-page">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-badge">⚔️</span>
+                <span>Math Ninja</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#features">Game Modes</a></li>
+                    <li><a href="index.html#interactive-demo">Live Slicer</a></li>
+                    <li><a href="changelog.html" class="active">Updates</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="delete-account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="changelog-wrapper">
+        <div class="container">
+
+            <div class="changelog-header">
+                <span class="version-badge">Version 1.0.5</span>
+                <h1>Calculus Arena & Performance Overhaul</h1>
+                <p>A massive update introducing expanded calculus problem banks, 120 FPS Skia particle rendering, and seamless cloud profile sync.</p>
+                <div class="lang-toggle">
+                    <button class="lang-btn" id="btn-vi" onclick="switchLang('vi')">Tiếng Việt</button>
+                    <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">English</button>
+                </div>
+            </div>
+
+            <!-- ENGLISH CHANGELOG -->
+            <div class="changelog-content" id="content-en">
+                <div class="changelog-card">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">
+                        <h3>Calculus Arena Balancing & New Math Banks</h3>
+                        <ul class="fancy-list">
+                            <li><strong>Derivative Speed Duels:</strong> Added over 200+ polynomial, trigonometric, and exponential derivative problems.</li>
+                            <li><strong>Adaptive Difficulty Scaling:</strong> Matchmaking now pairs ninjas with equivalent streaks to ensure fair, high-stakes competition.</li>
+                            <li><strong>Late-game Streak Protection:</strong> Streak freezes now activate automatically once per week for dedicated daily learners.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-card">
+                    <div class="card-icon">🚀</div>
+                    <div class="card-text">
+                        <h3>120 FPS Engine & Graphics Optimization</h3>
+                        <ul class="fancy-list">
+                            <li><strong>Shopify Skia Upgrade:</strong> Slicing particles and vector trails now render at a buttery-smooth 120 FPS on ProMotion & 120Hz displays.</li>
+                            <li><strong>Memory Leak Resolution:</strong> Fixed audio and texture cache accumulation during extended Chrono Tower sessions.</li>
+                            <li><strong>Foldable & Tablet UI:</strong> Native split-view scaling support for iPad Pro and Samsung Galaxy Z Fold series.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-card">
+                    <div class="card-icon">☁️</div>
+                    <div class="card-text">
+                        <h3>Backend & Cloud Sync Reliability</h3>
+                        <ul class="fancy-list">
+                            <li><strong>Instant Supabase Sync:</strong> Player avatar, high score records, and unlocked katana blades sync seamlessly across devices.</li>
+                            <li><strong>Firebase Cloud Messaging (FCM):</strong> Interactive streak reminder notifications so you never lose your hard-earned progress.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIETNAMESE CHANGELOG -->
+            <div class="changelog-content" id="content-vi" style="display: none;">
+                <div class="changelog-card">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">
+                        <h3>Đấu Trường Đạo Hàm (Calculus Arena) & Ngân Hàng Câu Hỏi Mới</h3>
+                        <ul class="fancy-list">
+                            <li><strong>Đấu Tốc Độ Đạo Hàm:</strong> Bổ sung hơn 200+ bài toán vi phân đa thức, lượng giác và hàm số mũ.</li>
+                            <li><strong>Cân Bằng Ghép Trận:</strong> Hệ thống tự động ghép đấu người chơi cùng cấp độ chuỗi streak để đảm bảo tính công bằng và kịch tính.</li>
+                            <li><strong>Bảo Vệ Chuỗi Streak:</strong> Vật phẩm đóng băng streak tự động kích hoạt 1 lần mỗi tuần cho người chơi chăm chỉ.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-card">
+                    <div class="card-icon">🚀</div>
+                    <div class="card-text">
+                        <h3>Tối Ưu Hiệu Năng 120 FPS & Đồ Họa Skia</h3>
+                        <ul class="fancy-list">
+                            <li><strong>Nâng Cấp Shopify Skia:</strong> Hiệu ứng vệt chém Katana và tia lửa hạt giờ đây mượt mà 120 FPS trên màn hình ProMotion và 120Hz.</li>
+                            <li><strong>Khắc Phục Rò Rỉ Bộ Nhớ:</strong> Tối ưu hóa bộ nhớ đệm âm thanh và texture khi leo tháp Chrono Tower trong thời gian dài.</li>
+                            <li><strong>Hỗ Trợ Màn Hình Gập & Máy Tính Bảng:</strong> Tự động căn chỉnh tỉ lệ chuẩn trên iPad Pro và dòng máy Galaxy Z Fold.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="changelog-card">
+                    <div class="card-icon">☁️</div>
+                    <div class="card-text">
+                        <h3>Đồng Bộ Đám Mây & Máy Chủ Ổn Định</h3>
+                        <ul class="fancy-list">
+                            <li><strong>Đồng Bộ Supabase Tức Thì:</strong> Avatar ninja, điểm số kỷ lục và các thanh kiếm đã mở khóa được đồng bộ xuyên suốt các thiết bị.</li>
+                            <li><strong>Thông Báo Đẩy Firebase (FCM):</strong> Nhắc nhở cứu chuỗi streak thông minh để bạn không bao giờ bị gián đoạn thành tích.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Math Ninja by AnhDaiPro. All rights reserved.</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="delete-account.html">Delete Account</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            const enContent = document.getElementById('content-en');
+            const viContent = document.getElementById('content-vi');
+            const btnEn = document.getElementById('btn-en');
+            const btnVi = document.getElementById('btn-vi');
+
+            if (lang === 'vi') {
+                enContent.style.display = 'none';
+                viContent.style.display = 'block';
+                btnVi.classList.add('active');
+                btnEn.classList.remove('active');
+            } else {
+                enContent.style.display = 'block';
+                viContent.style.display = 'none';
+                btnEn.classList.add('active');
+                btnVi.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
